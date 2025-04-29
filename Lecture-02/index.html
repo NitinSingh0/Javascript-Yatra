@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Javascript Yatra - Lecture 2</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+      color: #00c3ff;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      color: #a0e9fd;
+      margin-bottom: 30px;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .board {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 1000px;
+      min-height: 400px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .board {
+        padding: 20px;
+        min-height: 300px;
+      }
+    }
+  </style>
+  <script src="script.js"></script>
+  
+</head>
+<body>
+
+  <h1>Javascript Yatra</h1>
+  <h2>Lecture 2: Understanding JavaScript & How Web Technologies Work Together</h2>
+
+  <div class="board" id="teaching-board">
+    <h3>📌 What is JavaScript?</h3>
+    
+
+    <h3>🧠 HTML, CSS, and JS — The Trio of Web Development</h3>
+    
+      <li>🦴 HTML is the skeleton</li>
+      <li>👕 CSS is the skin/clothes — making it look good</li>
+      <li>🧠 JavaScript is the brain — making it respond and act</li>
+    </ul>
+
+   
+  </div>
+
+</body>
+</html>
