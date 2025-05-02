@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Javascript Yatra - Lecture 3</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+      color: #00ffb3;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      color: #a0e9fd;
+      margin-bottom: 30px;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .board {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 1000px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      text-align: left;
+    }
+
+    h3 {
+      color: #ffe26c;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    p, li {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin-left: 20px;
+      list-style: disc;
+    }
+
+    .code-box {
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 15px;
+      border-radius: 10px;
+      font-family: monospace;
+      color: #7fffd4;
+      margin: 10px 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .board {
+        padding: 20px;
+      }
+    }
+  </style>
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <h1>Javascript Yatra</h1>
+  <h2>Lecture 3: Values and Variables</h2>
+
+  <div class="board">
+    <h3>📌 What is a Value?</h3>
+    <p>
+      A <strong>value</strong> is the smallest unit of data in JavaScript. It represents actual data like numbers, strings, booleans, objects, etc.
+    </p>
+    <p>Examples of values:</p>
+    <div class="code-box">
+      42 <br>
+      "Hello, world!" <br>
+      true <br>
+      null
+    </div>
+
+    <h3>📦 What is a Variable?</h3>
+    <p>
+      A <strong>variable</strong> is like a container used to store values. We use variables to label and store data in memory for later use.
+    </p>
+    <p>Creating variables in JavaScript:</p>
+    <div class="code-box">
+      let age = 25; <br>
+      const name = "Nitin"; <br>
+      var isStudent = true;
+    </div>
+
+    <h3>🧠 Best Practices for Naming Variables</h3>
+    <ul>
+      <li>Use <strong>camelCase</strong> (e.g. <code>firstName</code>)</li>
+      <li>Only use letters, numbers, underscores (_), or dollar signs ($)</li>
+      <li>Don’t start with a number or capital letter</li>
+      <li>Don’t use reserved keywords</li>
+      <li>Choose descriptive names (e.g. <code>userAge</code>)</li>
+      <li>Use ALL CAPS for constants (e.g. <code>MAX_LIMIT</code>)</li>
+    </ul>
+  </div>
+
+</body>
+</html>
