@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Javascript Yatra - Lecture 4</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+      color: #00ffb3;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      color: #a0e9fd;
+      margin-bottom: 30px;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .board {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 1000px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      text-align: left;
+    }
+
+    h3 {
+      color: #ffe26c;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    p, li {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin-left: 20px;
+      list-style: disc;
+    }
+
+    .code-box {
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 15px;
+      border-radius: 10px;
+      font-family: monospace;
+      color: #7fffd4;
+      margin: 10px 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .board {
+        padding: 20px;
+      }
+    }
+  </style>
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <h1>Javascript Yatra</h1>
+  <h2>Lecture 4: Data Types</h2>
+
+  <div class="board">
+    <h2>Lecture 4: Data Types in JavaScript</h2>
+
+    <h3>🧪 JavaScript Data Types</h3>
+    <p>JavaScript has two main types of data:</p>
+    <ul>
+      <li><strong>Primitive</strong></li>
+      <li><strong>Object</strong> (also called Non-Primitive)</li>
+    </ul>
+
+    <h3>📌 Primitive Types (7 Total)</h3>
+    <p>Primitive values are immutable and hold a single value:</p>
+    <ul>
+      <li><code>Number</code>: e.g. <code>42</code>, <code>3.14</code></li>
+      <li><code>String</code>: e.g. <code>"Hello"</code>, <code>'World'</code></li>
+      <li><code>Boolean</code>: <code>true</code> or <code>false</code></li>
+      <li><code>Undefined</code>: A variable declared but not assigned</li>
+      <li><code>Null</code>: Intentionally set to "no value"</li>
+      <li><code>BigInt</code>: Large integers, e.g. <code>12345678901234567890n</code></li>
+      <li><code>Symbol</code>: Unique, immutable value, often used as object keys</li>
+    </ul>
+
+    <div class="code-box">
+      let age = 25; // Number <br>
+      let name = "Nitin"; // String <br>
+      let isOnline = true; // Boolean <br>
+      let score; // Undefined <br>
+      let emptyValue = null; // Null <br>
+      let bigNumber = 12345678901234567890n; // BigInt <br>
+      let id = Symbol("userId"); // Symbol
+    </div>
+
+    <h3>📦 Object Type</h3>
+    <p>Objects can hold multiple values and are used to store collections or more complex entities:</p>
+    <ul>
+      <li><code>Object</code>: Key-value pairs</li>
+      <li><code>Array</code>: Indexed list of items</li>
+      <li><code>Function</code>: Callable block of code</li>
+    </ul>
+
+    <div class="code-box">
+      let person = { name: "Nitin", age: 20 }; <br>
+      let fruits = ["apple", "banana", "mango"]; <br>
+      function greet() { alert("Hi!"); }
+    </div>
+  </div>
+
+</body>
+</html>
